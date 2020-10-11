@@ -57,11 +57,12 @@ PKGS=(
 )
 
 
-cd ${HOME}/AURIC
-chmod +x auric.sh
+
+cd ${HOME}/yay
+makepkg -si
 
 for PKG in "${PKGS[@]}"; do
-    ./auric.sh -i $PKG
+    yay -S --noconfirm $PKG
 done
 
 echo
