@@ -63,16 +63,11 @@ echo
 echo "Configuring vconsole.conf to set a larger font for login shell"
 
 sudo cat <<EOF > /etc/vconsole.conf
-KEYMAP=us
+KEYMAP=hr
 FONT=ter-v32b
 EOF
 
 # ------------------------------------------------------------------------
-
-echo
-echo "Setting laptop lid close to suspend"
-
-sudo sed -i -e 's|[# ]*HandleLidSwitch[ ]*=[ ]*.*|HandleLidSwitch=suspend|g' /etc/systemd/logind.conf
 
 # ------------------------------------------------------------------------
 
@@ -84,14 +79,6 @@ sudo cat <<EOF > /usr/share/icons/default/index.theme
 [Icon Theme]
 #Inherits=Theme
 EOF
-
-# ------------------------------------------------------------------------
-
-echo
-echo "Increasing file watcher count"
-
-# This prevents a "too many files" error in Visual Studio Code
-echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system
 
 # ------------------------------------------------------------------------
 
@@ -110,14 +97,6 @@ echo "Enabling bluetooth daemon and setting it to auto-start"
 sudo sed -i 's|#AutoEnable=false|AutoEnable=true|g' /etc/bluetooth/main.conf
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
-
-# ------------------------------------------------------------------------
-
-echo
-echo "Enabling the cups service daemon so we can print"
-
-systemctl enable org.cups.cupsd.service
-systemctl start org.cups.cupsd.service
 
 # ------------------------------------------------------------------------
 
