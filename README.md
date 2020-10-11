@@ -31,8 +31,6 @@ I don't run an application dock. The Whisker Menu (which I trigger via a shortcu
 
 I set up my machines as development environments since that's mostly what I do. To that end I install lots of dev tools and customize various things to increase productivity. For exmple, I set up Apache server to run as me, with the WebServer directory located in my home folder.
 
-I run my own utilites: __[WifiVPN](https://github.com/rickellis/WifiVPN)__ for network/VPN connectivity, __[AURIC](https://github.com/rickellis/AURIC)__ for AUR package management, and __[ConkyMatic](https://github.com/rickellis/ConkyMatic)__ to theme my Conky whenever I switch wallpaper.
-
 ---
 
 The install steps are as follows:
@@ -76,22 +74,21 @@ So we can clone this repo...
 ### Clone ArchMatic
 Typically I just clone it into the home folder and delete it once I'm done.
 
-    $   git clone https://github.com/rickellis/ArchMatic.git
+    $   git clone https://github.com/RAWnun/ArchMatic.git
 
 ---
 
 ### Run ArchMatic files
 Run the following scripts:
 
-    $   ./1-xorg.sh
-    $   ./2-xfce.sh 
-    $   ./3-network.sh 
-    $   ./4-bluetooth.sh 
-    $   ./5-audio.sh 
-    $   ./6-printers.sh 
-    $   ./7-software-pacman.sh
-    $   ./8-software-aur.sh
-    $   ./9-setup.sh
+    $   ./100-xorg.sh
+    $   ./200-xfce.sh 
+    $   ./300-network.sh 
+    $   ./400-bluetooth.sh 
+    $   ./500-audio.sh  
+    $   ./600-software-pacman.sh
+    $   ./700-software-aur.sh
+    $   ./800-setup.sh
 
 ### Reboot
 
