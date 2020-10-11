@@ -34,14 +34,12 @@ PKGS=(
     'inxi'                  # System information utility
     'jq'                    # JSON parsing library
     'jshon'                 # JSON parsing library
-    'neofetch'              # Shows system info when you launch terminal
     'ntp'                   # Network Time Protocol to set time via network.
     'numlockx'              # Turns on numlock in X11
     'openssh'               # SSH connectivity tools
     'rsync'                 # Remote file sync utility
     'speedtest-cli'         # Internet speed via terminal
     'terminus-font'         # Font package with some bigger fonts for login terminal
-    'tlp'                   # Advanced laptop power management
     'unrar'                 # RAR compression program
     'unzip'                 # Zip compression program
     'wget'                  # Remote content retrieval
@@ -52,27 +50,42 @@ PKGS=(
     'zsh-completions'       # Tab completion for ZSH
 
     # DISK UTILITIES ------------------------------------------------------
-
+    'android-tools'         # ADB for Android
+    'android-file-transfer' # Android File Transfer
     'autofs'                # Auto-mounter
+    'btrfs-progs'           # BTRFS Support
+    'dosfstools'            # DOS Support
     'exfat-utils'           # Mount exFat drives
     'gparted'               # Disk utility
-    'gnome-disks'           # Disk utility
+    'gvfs-mtp'              # Read MTP Connected Systems
+    'gvfs-smb'              # More File System Stuff
+    'nautilus-share'        # File Sharing in Nautilus
     'ntfs-3g'               # Open source implementation of NTFS file system
     'parted'                # Disk utility
-
+    'samba'                 # Samba File Sharing
+    'smartmontools'         # Disk Monitoring
+    'smbclient'             # SMB Connection 
+    'xfsprogs'              # XFS Support
+    'gvfs-gphoto2'          # XFS Support
+    'f2fs-tools'
+    'lvm2'
+    'mtools'
+    'nfs-utils'
+    'nilfs-utils'
+    'mlocate'
+    'gvfs-afc'
+    'gvfs-goa'
+    'gvfs-nfs'
+    
     # GENERAL UTILITIES ---------------------------------------------------
 
+    'flameshot'             # Screenshots
     'catfish'               # Filesystem search
-    'conky'                 # System information viewer
-    'nemo'                  # Filesystem browser
     'veracrypt'             # Disc encryption utility
-    'variety'               # Wallpaper changer
-    'xfburn'                # CD burning application
 
     # DEVELOPMENT ---------------------------------------------------------
 
-    'atom'                  # Text editor
-    'apache'                # Apache web server
+    'gedit'                  # Text editor
     'clang'                 # C Lang compiler
     'cmake'                 # Cross-platform open-source make system
     'electron'              # Cross-platform development using Javascript
@@ -83,9 +96,6 @@ PKGS=(
     'meld'                  # File/directory comparison
     'nodejs'                # Javascript runtime environment
     'npm'                   # Node package manager
-    'php'                   # Web application scripting language
-    'php-apache'            # Apache PHP driver
-    'postfix'               # SMTP mail server
     'python'                # Scripting language
     'qtcreator'             # C++ cross platform IDE
     'qt5-examples'          # Project demos for Qt
@@ -93,28 +103,20 @@ PKGS=(
 
     # WEB TOOLS -----------------------------------------------------------
 
-    'chromium'              # Web browser
     'firefox'               # Web browser
     'filezilla'             # FTP Client
-    'flashplugin'           # Flash
-
-    # COMMUNICATIONS ------------------------------------------------------
-
-    'hexchat'               # Multi format chat
-    'irssi'                 # Terminal based IIRC
-
+    'qbittorrent'           # FTP Client
+    
     # MEDIA ---------------------------------------------------------------
-
-    'lollypop'              # Music player
-    'simplescreenrecorder'  # Record your screen
-    'vlc'                   # Video player
-    'xfce4-screenshooter'   # Screen capture.
+    'kdenlive'              # Movie Render
+    'obs-studio'            # Record your screen
+    'mpv'                   # Video player
+    'mplayer'               # Video player
 
     # GRAPHICS AND DESIGN -------------------------------------------------
 
     'gcolor2'               # Colorpicker
     'gimp'                  # GNU Image Manipulation Program
-    'inkscape'              # Vector image creation app
     'imagemagick'           # Command line image manipulation tool
     'nomacs'                # Image viewer
     'pngcrush'              # Tools for optimizing PNG images
@@ -125,8 +127,6 @@ PKGS=(
     'galculator'            # Gnome calculator
     'hunspell'              # Spellcheck libraries
     'hunspell-en'           # English spellcheck library
-    'libreoffice-fresh'     # Libre office with extra features
-    'mousepad'              # XFCE simple text editor
     'xpdf'                  # PDF viewer
 
     # VIRTUALIZATION ------------------------------------------------------
