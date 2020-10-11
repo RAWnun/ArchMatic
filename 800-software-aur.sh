@@ -24,26 +24,17 @@ PKGS=(
     'menulibre'                 # Menu editor
     'gtkhash'                   # Checksum verifier
 
-    # TERMINAL UTILITIES --------------------------------------------------
-
-    'hyper'                     # Terminal emulator built on Electron
-
     # UTILITIES -----------------------------------------------------------
 
     'dropbox'                   # Cloud file storage
-    'enpass-bin'                # Password manager
     'slimlock'                  # Screen locker
     'oomox'                     # Theme editor
+    'expressvpn' 
 
     # DEVELOPMENT ---------------------------------------------------------
     
-    'visual-studio-code-bin'    # Kickass text editor
+    'sublime-text-nightly'    # Kickass text editor
 
-    # MEDIA ---------------------------------------------------------------
-
-    'spotify'                   # Music player
-    'screenkey'                 # Screencast your keypresses
-    # 'aftershotpro3'             # Photo editor
 
     # POST PRODUCTION -----------------------------------------------------
 
@@ -51,8 +42,9 @@ PKGS=(
 
     # COMMUNICATIONS ------------------------------------------------------
 
-    'skypeforlinux-stable-bin'  # Skype
-
+    'viber'  
+    'whatsapp-nativefier'
+    
     # THEMES --------------------------------------------------------------
 
     'gtk-theme-arc-git'
